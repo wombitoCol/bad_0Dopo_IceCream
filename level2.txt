@@ -1,0 +1,150 @@
+jugador vs jugador
+vainilla 9 5
+chocolate 9 10
+
+block iceblock 0 0
+block iceblock 0 1
+block iceblock 0 2
+block iceblock 0 3
+block iceblock 0 4
+block iceblock 0 5
+block iceblock 0 6
+block iceblock 0 7
+block iceblock 0 8
+block iceblock 0 9
+block iceblock 0 10
+block iceblock 0 11
+block iceblock 0 12
+block iceblock 0 13
+block iceblock 0 14
+block iceblock 0 15
+
+block iceblock 15 0
+block iceblock 15 1
+block iceblock 15 2
+block iceblock 15 3
+block iceblock 15 4
+block iceblock 15 5
+block iceblock 15 6
+block iceblock 15 7
+block iceblock 15 8
+block iceblock 15 9
+block iceblock 15 10
+block iceblock 15 11
+block iceblock 15 12
+block iceblock 15 13
+block iceblock 15 14
+block iceblock 15 15
+
+block iceblock 1 0
+block iceblock 2 0
+block iceblock 3 0
+block iceblock 4 0
+block iceblock 5 0
+block iceblock 6 0
+block iceblock 7 0
+block iceblock 8 0
+block iceblock 9 0
+block iceblock 10 0
+block iceblock 11 0
+block iceblock 12 0
+block iceblock 13 0
+block iceblock 14 0
+
+block iceblock 1 15
+block iceblock 2 15
+block iceblock 3 15
+block iceblock 4 15
+block iceblock 5 15
+block iceblock 6 15
+block iceblock 7 15
+block iceblock 8 15
+block iceblock 9 15
+block iceblock 10 15
+block iceblock 11 15
+block iceblock 12 15
+block iceblock 13 15
+block iceblock 14 15
+
+block iceblock 7 1
+block iceblock 7 2
+block iceblock 7 3
+block iceblock 7 4
+block iceblock 7 5
+block iceblock 7 10
+block iceblock 7 11
+block iceblock 7 12
+block iceblock 7 13
+block iceblock 7 14
+
+block iceblock 8 1
+block iceblock 8 2
+block iceblock 8 3
+block iceblock 8 4
+block iceblock 8 5
+block iceblock 8 10
+block iceblock 8 11
+block iceblock 8 12
+block iceblock 8 13
+block iceblock 8 14
+
+block iceblock 1 8
+block iceblock 2 8
+block iceblock 3 8
+block iceblock 4 8
+block iceblock 5 8
+block iceblock 10 8
+block iceblock 11 8
+block iceblock 12 8
+block iceblock 13 8
+block iceblock 14 8
+
+block iceblock 1 7
+block iceblock 2 7
+block iceblock 3 7
+block iceblock 4 7
+block iceblock 5 7
+block iceblock 10 7
+block iceblock 11 7
+block iceblock 12 7
+block iceblock 13 7
+block iceblock 14 7
+
+block decoration 6 6
+block decoration 6 7
+block decoration 6 8
+block decoration 6 9
+block decoration 7 6
+block decoration 7 7
+block decoration 7 8
+block decoration 7 9
+block decoration 8 6
+block decoration 8 7
+block decoration 8 8
+block decoration 8 9
+block decoration 9 6
+block decoration 9 7
+block decoration 9 8
+block decoration 9 9
+
+monster calamar 3 3
+monster calamar 3 12
+
+phase 1
+fruit cereza 1 1
+fruit cereza 6 1
+fruit cereza 9 1
+fruit cereza 14 1
+fruit cereza 1 14
+fruit cereza 6 14
+fruit cereza 9 14
+fruit cereza 14 14
+fruit cereza 1 6
+fruit cereza 1 9
+fruit cereza 14 6
+fruit cereza 14 9
+ 
+
+phase 2
+fruit pina 4 11
+fruit pina 11 4
