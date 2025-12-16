@@ -614,7 +614,11 @@ public class BadIceCream implements Serializable {
      * - null: sí
      * - iceblock / decoration: no
      * - baldosa caliente: sí
-     * - fogata: sí SOLO si está inactiva
+     * - fogata: sí (si está activa, morirá al ejecutar checkActionsForPlayerX)
+     *
+     * @param r fila destino
+     * @param c columna destino
+     * @return true si el jugador puede pararse en esa casilla (la muerte se evalúa aparte)
      */
     private boolean canPlayerStepOn(int r, int c) {
         if (!inBounds(r, c)) return false;
@@ -627,10 +631,36 @@ public class BadIceCream implements Serializable {
 
         if (b.isBaldosaCaliente()) return true;
 
-        if (b.isFogata()) {
-            Fogata f = (Fogata) b;
-            return !f.isActive(); // solo si NO está activa
-        }
+        // IMPORTANTE: ahora sí deja pisar la fogata; la muerte la decide checkActions
+        if (b.isFogata()) return true;
+
+        // Si aparece otro tipo de bloque “raro”, por defecto no se pisa
+        return false;
+    }
+    
+    /**
+     * Regla de pisabilidad para monstruos:
+     * - null: sí
+     * - baldosa caliente: sí
+     * - fogata: sí (activa o inactiva)
+     * - iceblock / decoration: no
+     *
+     * @param r fila destino
+     * @param c columna destino
+     * @return true si un monstruo puede pararse en esa casilla
+     */
+    public boolean canMonsterStepOn(int r, int c) {
+        if (!inBounds(r, c)) return false;
+
+        Block b = blocks[r][c];
+        if (b == null) return true;
+
+        if (b.isIceBlock()) return false;
+        if (b.isDecorationBlock()) return false;
+
+        if (b.isBaldosaCaliente()) return true;
+        if (b.isFogata()) return true;
+
         return false;
     }
 

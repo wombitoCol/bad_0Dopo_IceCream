@@ -41,4 +41,5 @@ public class Fogata extends Block {
         }
         return false;
     }
+    
 }
